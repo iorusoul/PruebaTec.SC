@@ -9,7 +9,7 @@ Se ha subido un corto video a youtube para demostrar el funcionamiento.
 
 ## Overview
 
-El proyecto ha sido creado utilizando el patron CQRS respetando los principios solid, se han utilizado diversos patrones comunmente usados en la industria y se ha elegido una arquitectura clean, ademas se ha utilizado el micro ORM dapper para la base de datos y SqlServer para el motor de BD. 
+El proyecto ha sido creado respetando los principios solid e inyeccion de dependencias asi como separacion de capas por responsabilidad ademas la arquitectura reduce el acoplamiento de codigo mediante el uso de interfaces facilitando las pruebas a futuro, se han utilizado diversos patrones comunmente usados en la industria y se ha elegido una arquitectura clean, ademas se ha utilizado el micro ORM dapper para la base de datos y SqlServer para el motor de BD. 
 
 ## Contenido
 1. [¿Como Utilizar?](#como-utilizar)
