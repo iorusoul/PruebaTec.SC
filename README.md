@@ -40,3 +40,7 @@ Es necesario configurar correctamente la cadena de conexion del motor de SQLServ
  ## Arquitectura
 
  ![arquitectura](https://miro.medium.com/v2/resize:fit:678/1*dyEEkN3GHQeg7sA6v22EHw.png)
+
+ ## Contacto
+### Ing. Rusbel Oliver Ruelas Paredes
+### Email : rusbelruelas@gmail.com
