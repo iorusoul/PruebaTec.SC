@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\PruebaTecnica.SoyCalidad.Application\PruebaTecnica.SoyCalidad.Application.csproj" />
+    <ProjectReference Include="..\PruebaTecnica.SoyCalidad.Domain\PruebaTecnica.SoyCalidad.Domain.csproj" />
+    <ProjectReference Include="..\PruebaTecnica.SoyCalidad.Infrastructure\PruebaTecnica.SoyCalidad.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

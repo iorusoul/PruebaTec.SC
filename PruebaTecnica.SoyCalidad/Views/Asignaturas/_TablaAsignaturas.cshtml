@@ -1,0 +1,38 @@
+﻿@using PruebaTecnica.SoyCalidad.Domain
+@model IEnumerable<Asignatura>
+@{
+}
+
+<table class="table table-hover table-striped">
+    <thead>
+        <tr>
+            <th scope="col">ID</th>
+            <th scope="col">Código</th>
+            <th scope="col">Nombre</th>
+            <th scope="col">ECTS</th>
+            <th scope="col">Personalizable</th>
+            <th scope="col">Horas</th>
+            <th scope="col">Modalidad</th>
+            <th scope="col">Publicar en Web</th>
+            <th scope="col">Fecha de Alta</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var asignatura in Model)
+        {
+            <tr>
+                <td>@asignatura.IdAsignatura</td>
+                <td>@asignatura.CodAsignatura</td>
+                <td>@asignatura.AsignaturaNombre</td>
+                <td>@asignatura.ECTS</td>
+                <td>@(asignatura.EsPersonalizable ? "Sí" : "No")</td>
+                <td>@(asignatura.Horas.HasValue ? asignatura.Horas.ToString() : "N/A")</td>
+                <td>@(asignatura.IdModalidad.HasValue ? asignatura.IdModalidad.ToString() : "N/A")</td>
+                <td>@(asignatura.PublicarWeb ? "Sí" : "No")</td>
+                <td>@asignatura.FechaAlta.ToShortDateString()</td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+

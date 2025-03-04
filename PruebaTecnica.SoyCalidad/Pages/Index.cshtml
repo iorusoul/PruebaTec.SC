@@ -1,0 +1,56 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Asignaturas</h1>
+    <h4 class="margin3 padding3">Resolución de la Prueba Tecnica utilizando MVC y razor para consulta paginada utilizando dapper como ORM</h4>
+    <div class="margin3">
+        <a  asp-controller="Asignaturas" asp-action="Index">Ver asignaturas</a>
+    </div>
+    
+    <div>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+            ¿Como Optimizar el acceso?
+        </button>
+        <br />
+        <div class="collapse" id="collapseExample">
+            <div class="card card-body">
+                <p>
+                    ¿Como Optimizar el acceso?
+                    <br />
+                    Entendiendo que MVC con ASP de por si para el renderizado utiliza bastante carga para el servidor podriamos reconocer
+                    algunos cuellos de botella para mejorar la eficiencia, por lo general el primer cuello de botella puede darse en la base de datos
+                    dado que por capacidades del motor las bases de datos suelen admitir un numero limitado de consultas por segundo dependiendo del motor
+                    y la capacidad del servidor, en este punto se puede aplicar tecnicas de desnormalizacion de datos y guardar los datos que sabemos son consultados
+                    con mayor frecuencia en bases de datos hibridas como table storage de azure o dynamoDB para aws, por lo general las bases de datos
+                    NoSQL suelen admitir una mayor cantidad de conexiones a la base de datos simultaneas por ejemplo he trabajado con TableStorage
+                    de azure que soporta hasta 20000 conexiones simultaneas por segundo ampliando enormemente las capacidades de respuesta del sistema a
+                    diferencia de los 600 usuarios simultaneos que soporta Mysql por ejemplo, en este punto para llegar a esta optimizacion es necesario
+                    analizar las consultas y los datos a desnormalizar,
+                    Otros posibles cuellos de botella se encuentran en el servidor de la aplicacion, en MVC con ASP el modelo de trabajo suele depender
+                    de un renderizado en el servidor de los recursos en html, por lo tanto en este punto una solucion puede venir de un escalado horizontal
+                    del servidor, es decir contratar o utilizar un servidor con mas recursos como mas memoria y mejor procesador, este tipo de escalado
+                    suele acarrear mas costes y es impredecible a la demanda, dependiendo de la arquitectura interna del proyecto se pueden evaluar otras
+                    alternativas para escalado vertical es decir agregar mas servidores para atender las consultas sin embargo esto depende de
+                    la estructura del proyecto y muchas veces mvc no se presta mucho para ello, sin embargo existen alternativas oara escalados
+                    horizontales en la nube de datos de diferentes proveedores, por ejemplo azure ofrece productos serverless como los azure functions
+                    o azure apps que permiten un escalado elastico lo cual permite escalar el servicio solo cuando es requerido, reduciendo enormemente los costos
+                    <br />
+                    En mi experiencia el balance de cargas puede ser atacado desde diferentes frentes, desde un adecuado manejo del servidor a nivel
+                    de consultas por ejemplo utilizando correctamente las llamadas asincronas en el backend, hasta dividir los servicios segun
+                    el trafico que reciban, llegando a arquitecturas asincronas basadas en eventos, que permiten optimizar al maximo el uso de los
+                    recursos computacionales, tambien estan las alternativas de las nubes como los gateways y load balancer virtuales que permiten
+                    realizar una configuracion de proxy inverso que administra la carga que recibe cada servicio, ademas de ayudar contra los ataques
+                    ddos que tambien pueden llevar a la extincion de los recursos del servicio.
+
+                </p>
+
+            </div>
+        </div>
+
+    </div>
+    
+</div>

@@ -1,0 +1,54 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34024.191
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnica.SoyCalidad", "PruebaTecnica.SoyCalidad\PruebaTecnica.SoyCalidad.csproj", "{4865F3AA-1547-4FAA-B2D3-98890DE7E27B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Domain", "Domain", "{A0662FEE-27EC-4096-94C5-8E03B315B121}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{DBB6E972-C9E2-4C6F-A005-B97879A9FE03}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Application", "Application", "{3D365F56-7E1D-40C2-8D3C-900991831A2F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnica.SoyCalidad.Domain", "PruebaTecnica.SoyCalidad.Domain\PruebaTecnica.SoyCalidad.Domain.csproj", "{DAD181AC-0FBC-478D-86A9-9FD5DFA696A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnica.SoyCalidad.Application", "PruebaTecnica.SoyCalidad.Application\PruebaTecnica.SoyCalidad.Application.csproj", "{E018870C-7A06-479A-800F-4660B56C7F37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebaTecnica.SoyCalidad.Infrastructure", "PruebaTecnica.SoyCalidad.Infrastructure\PruebaTecnica.SoyCalidad.Infrastructure.csproj", "{8BC54152-BA8D-4A41-BD43-9C6EA42DB6D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4865F3AA-1547-4FAA-B2D3-98890DE7E27B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4865F3AA-1547-4FAA-B2D3-98890DE7E27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4865F3AA-1547-4FAA-B2D3-98890DE7E27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4865F3AA-1547-4FAA-B2D3-98890DE7E27B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DAD181AC-0FBC-478D-86A9-9FD5DFA696A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DAD181AC-0FBC-478D-86A9-9FD5DFA696A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DAD181AC-0FBC-478D-86A9-9FD5DFA696A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DAD181AC-0FBC-478D-86A9-9FD5DFA696A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E018870C-7A06-479A-800F-4660B56C7F37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E018870C-7A06-479A-800F-4660B56C7F37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E018870C-7A06-479A-800F-4660B56C7F37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E018870C-7A06-479A-800F-4660B56C7F37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BC54152-BA8D-4A41-BD43-9C6EA42DB6D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BC54152-BA8D-4A41-BD43-9C6EA42DB6D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BC54152-BA8D-4A41-BD43-9C6EA42DB6D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BC54152-BA8D-4A41-BD43-9C6EA42DB6D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DAD181AC-0FBC-478D-86A9-9FD5DFA696A7} = {A0662FEE-27EC-4096-94C5-8E03B315B121}
+		{E018870C-7A06-479A-800F-4660B56C7F37} = {3D365F56-7E1D-40C2-8D3C-900991831A2F}
+		{8BC54152-BA8D-4A41-BD43-9C6EA42DB6D7} = {DBB6E972-C9E2-4C6F-A005-B97879A9FE03}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {8F55F05D-FAC2-4D90-8A46-E4C9D2B61020}
+	EndGlobalSection
+EndGlobal
